@@ -1,6 +1,8 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const DashboardPlugin = require("webpack-dashboard/plugin");
 require("babel-polyfill");
+
 module.exports = {
   entry: ["babel-polyfill", __dirname + "/src/app/index.js"],
   output: {
@@ -38,15 +40,17 @@ module.exports = {
       },
     ],
   },
+
   plugins: [
     new HtmlWebpackPlugin({
       template: __dirname + "/src/public/index.html",
       inject: "body",
     }),
     new ExtractTextPlugin("main.css"),
+    new DashboardPlugin(),
   ],
   devServer: {
     contentBase: "./src/public",
     port: 8000,
-  }
+  },
 };
