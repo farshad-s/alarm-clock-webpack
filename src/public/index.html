@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+    <title>Alarm Clock</title>
+  </head>
+  <body>
+    <h1 class="title">Alarm Clock</h1>
+    <div class="current-time-container">
+      <p id="hours">00</p>
+      <p class="colon">:</p>
+      <p id="minutes">00</p>
+      <p class="colon">:</p>
+      <p id="seconds">00</p>
+    </div>
+    <p id="set-alarm-title">Set Alarm Time</p>
+    <div class="add-alarm">
+      <select class="drop-down" id="add-hour" name="add-hour">
+        <option value="" disabled selected>Select Hour</option>
+      </select>
+      <select class="drop-down" id="add-minute" name="add-minute">
+        <option value="" disabled selected>Select Minute</option>
+      </select>
+      <button id="add-alarm-button">Add Alarm</button>
+    </div>
+    <div class="alarm-set">
+      <p id="alarm-set-title">You set an Alarm for</p>
+      <p id="alarm-set-time">Alarm Not Currently Set</p>
+      <button class="disable-alarm" id="disable-alarm">Disable Alarm</button>
+    </div>
+  </body>
+</html>
