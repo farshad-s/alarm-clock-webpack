@@ -1,0 +1,1 @@
+export { playAlarm } from "./playAlarm";
