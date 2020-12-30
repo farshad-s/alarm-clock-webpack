@@ -1,5 +1,1 @@
-export {
-  addToMinuteDropdown,
-  addToHourDropdown,
-  alarmSet,
-} from "./addToDropdown";
+export { addToMinuteDropdown, addToHourDropdown } from "./addToDropdown";
