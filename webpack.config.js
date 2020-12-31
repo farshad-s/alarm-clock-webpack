@@ -13,6 +13,13 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.mp3$/,
+        loader: "file-loader",
+        query: {
+          name: "static/media/[name].[hash:8].[ext]",
+        },
+      },
+      {
         test: /\.js$/,
         use: "babel-loader",
         exclude: [/node_modules/],
