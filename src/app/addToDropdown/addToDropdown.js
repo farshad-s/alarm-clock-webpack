@@ -3,7 +3,7 @@ let addMinute = document.getElementById("add-minute");
 
 // adds the dropdown options for the 24 hours
 export function addToHourDropdown() {
-  for (let hour = 1; hour <= 24; hour++) {
+  for (let hour = 0; hour <= 23; hour++) {
     let option = document.createElement("option");
     option.text = hour;
     option.text < 10 ? (option.text = "0" + option.text) : "";
