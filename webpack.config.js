@@ -8,7 +8,7 @@ module.exports = {
   output: {
     path: __dirname + "/dist",
     filename: "bundle.js",
-    publicPath: "/",
+    publicPath: "/alarm-clock-webpack/src/app/index.js",
   },
   module: {
     rules: [
